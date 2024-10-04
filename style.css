@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+
+}
+
+body {
+    background-color: black;
+}
+
+.header {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    z-index: 1000;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 100px;
+
+}
+
+.logo {
+    display: flex;
+}
+
+.logo img {
+    width: 40px;
+}
+
+.logo h2 {
+    font-size: 25px;
+    padding: 0 7px;
+    color: yellow;
+    font-style: italic;
+}
+
+header nav {
+    display: flex;
+    column-gap: 50px;
+  
+}
+
+header nav li {
+    position: relative;
+   
+}
+
+header nav li a {
+    color: white;
+    font-size: 18px;
+    padding: 2px 8px;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+header nav li a:hover {
+    color: black;
+    background-color: yellow;
+}
+
+header .btn-entrar {
+    color: black;
+    background-color: yellow;
+    font-size: 18px;
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+header .btn-entrar:hover {
+    background-color: rgba(255, 255, 0, 0.864);
+}
+
+/*------------------------------------------*/
+/*------------------------------------------*/
+/*------------------------------------------*/
+
+.whatsap img {
+    position: fixed;
+    width: 60px;
+    z-index: 9;
+    right: 10px;
+    bottom: 220px;
+}
+
+/*------------------------------------------*/
+
+.container {
+    height: 695px;
+}
+
+.container img {
+    display: block;
+    width: 100%;
+    height: 695px;
+    filter: brightness(30%);
+}
+
+.container h1 {
+    font-size: 60px;
+    color: yellow;
+    position: relative;
+    text-align: center;
+    bottom: 500px;
+}
+
+.container p {
+    font-size: 20px;
+    color: white;
+    position: relative;
+    text-align: center;
+    bottom: 500px;
+}
+
+.container .input-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container input {
+    position: relative;
+    width: 600px;
+    height: 50px;
+    font-size: 15.5px;
+    color: rgb(0, 0, 0);
+    bottom: 450px;
+    padding: 0 10px;
+    outline: none;
+    border-radius: 5px;
+
+}
+
+.container button {
+    position: relative;
+    bottom: 450px;
+    width: 135px;
+    height: 50px;
+    font-weight: bold;
+    font-size: 15.5px;
+    background-color: yellow;
+    margin: 0 10px;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.container button:hover {
+    background-color: rgba(255, 255, 0, 0.864);
+}
+
+/*------------------------------------------*/
+/*------------------------------------------*/
+/*------------------------------------------*/
+
+main {
+    padding: 15px 0px;
+
+}
+
+#filmes {
+    display: inline-block;
+    font-size: 25px;
+    color: yellow;
+    margin: 0 90px;
+}
+
+#séries {
+    display: inline-block;
+    font-size: 25px;
+    color: yellow;
+    margin: 0 90px;
+}
+
+.catalogo {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    padding-top: 20px;
+    column-gap: 60px;
+    row-gap: 60px;
+    justify-content: center;
+}
+
+.catalogo .card {
+    background-color: rgb(0, 0, 0);
+    width: 220px;
+    height: 390px;
+    justify-content: center;
+    border-radius: 10px;
+    transition: transform .3s;
+}
+
+.card:hover {
+    transform: translateY(-12px);
+}
+
+.card img {
+    border-radius: 10px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.movie-title {
+    color: white;
+    font-size: 12px;
+    font-weight: 750;
+    text-align: center;
+    line-height: 2;
+}
+
+.text-p {
+    display: flex;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+}
+
+.text-icon {
+    font-size: 13px;
+    font-weight: 800;
+    margin: 0px 5px;
+    padding: 0px 5px;
+    border-radius: 4px;
+    background-color: yellow;
+}
+
+.text-bar {
+    color: yellow;
+    font-weight: 600;
+
+}
+
+.star {
+    text-align: center;
+    color: goldenrod;
+}
+
+/*------------------------------------------*/
+/*------------------------------------------*/
+/*------------------------------------------*/
+
+footer {
+    height: 110px;
+
+    color: white;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+footer .infor-social {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 100px;
+}
+
+footer .infor-social img {
+    width: 15px;
+}
+
+footer .infor {}
+
+footer .infor h3 {
+    text-align: center;
+}
+
+footer .redes-sociais img {
+    margin: 0px 3px;
+    width: 25px;
+
+}
+
+footer .copyright {
+    padding: 10px;
+    text-align: center;
+
+}
+
+footer .copyright p {
+    font-size: 15px;
+
+}
+
+
+
+@media (max-width: 1057px) {
+
+    .header {
+        flex-direction: column;
+    }
+
+@media (max-width: 660px) {
+    .catalogo {
+        grid-template-columns: auto auto;
+    }
+}
